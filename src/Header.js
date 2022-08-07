@@ -29,7 +29,7 @@ const Styles = {
         backgroundColor: '#888888e6',
         width: '100%',
         height: '3.5rem',
-        color: 'white',
+        color: 'white'
     },
     appname: {
         marginLeft: '1.5rem',
