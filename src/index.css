@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f1f1f1;
 }
 
 code {
@@ -12,6 +13,77 @@ code {
     monospace;
 }
 
-.searchicon:hover{
+.app{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main{
+  margin-top: 15px;
+  width: 70%;
+}
+.tab{
+  color: black;
+  background-color: white;
+  padding: 10px 10px;
+  margin-right: 7px;
+  border-radius: 3.5px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: none;
+}
+.active-tab{
+  color: white;
+  background-color: rgb(60, 150, 235);
+  padding: 10px 10px;
+  margin-right: 7px;
+  border-radius: 3.5px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: none;
+}
+.tab:hover{
   cursor: pointer;
+}
+.active-tab:hover{
+  cursor: pointer;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+}
+.mobiles-list{
+  margin-top: 20px;
+  display: block ruby;
+  overflow-x: scroll;
+  box-sizing: border-box;
+}
+.mobile-card{
+  display: inline-flex;
+  background-color: white;
+  margin-right: 5px;
+  width:30%
+}
+.mobile-right{
+  display: flex;
+  flex-direction: column;
+  padding-right: 0px;
+}
+.laptop-list{
+  margin-top: 20px;
+  display: block ruby;
+  overflow-x: scroll;
+  box-sizing: border-box;
+}
+.laptop-card{
+  display: inline-flex;
+  background-color: white;
+  margin-right: 5px;
+  width:30%
+}
+.laptop-right{
+  display: flex;
+  flex-direction: column;
+  padding-right: 0px;
 }
