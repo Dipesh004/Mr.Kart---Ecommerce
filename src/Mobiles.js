@@ -4,7 +4,7 @@ function Mobiles(props) {
     return (
         <div className="mobile-card">
             <div className="mobile-left">
-                <img src="" alt="mobile" />
+                <img className='mobile-image' src={props.mobile.img} alt="mobile" />
             </div>
             <div className="mobile-right">
                 <div className="mobile-desc">
@@ -13,6 +13,7 @@ function Mobiles(props) {
                 <div className="mobile-price">
                     {props.mobile.price}
                 </div>
+                <button className='add-to-cart' >Add To Cart</button>
             </div>
         </div>
     )
