@@ -1,23 +1,22 @@
 import React from 'react';
 
-function Mobiles(props) {
+function Cart(props) {
     return (
         <div className="mobile-card">
             <div className="mobile-left">
-                <img className='mobile-image' src={props.mobile.img} alt="mobile" />
+                <img className='mobile-image' src={props.cart.img} alt="mobile" />
             </div>
             <div className="mobile-right">
                 <div className="mobile-desc">
-                    {props.mobile.description}
+                    {props.cart.description}
                 </div>
                 <div className="mobile-price">
-                    {props.mobile.price}
+                    {props.cart.price}
                 </div>
-                <button className='add-to-cart' onClick={()=>{props.onAddToCart(props.mobile)}} >Add To Cart</button>
             </div>
         </div>
     )
 
 }
 
-export default Mobiles;
+export default Cart;
