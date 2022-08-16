@@ -62,7 +62,7 @@ code {
 }
 
 .mobiles-list {
-  margin-top: 20px;
+  margin-top: 3.5px;
   display: flex;
   overflow-x: scroll;
   box-sizing: border-box;
@@ -80,6 +80,7 @@ code {
   margin-right: 15px;
   width: 30%;
   height: 190px;
+  border-radius: 10px;
 }
 
 .mobile-image {
@@ -133,6 +134,7 @@ code {
   margin-right: 15px;
   width: 30%;
   height: 208px;
+  border-radius: 10px;
 }
 
 .laptop-image {
