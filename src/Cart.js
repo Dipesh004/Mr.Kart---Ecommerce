@@ -2,15 +2,15 @@ import React from 'react';
 
 function Cart(props) {
     return (
-        <div className="mobile-card">
-            <div className="mobile-left">
-                <img className='mobile-image' src={props.cart.img} alt="mobile" />
+        <div className="cart-card">
+            <div className="cart-left">
+                <img className='cart-image' src={props.cart.img} alt="cart" />
             </div>
-            <div className="mobile-right">
-                <div className="mobile-desc">
+            <div className="cart-right">
+                <div className="cart-desc">
                     {props.cart.description}
                 </div>
-                <div className="mobile-price">
+                <div className="cart-price">
                     {props.cart.price}
                 </div>
             </div>

@@ -13,7 +13,7 @@ function Laptops(props){
                 <div className="laptop-price">
                     {props.laptop.price}
                 </div>
-                <button className='add-to-cart' >Add To Cart</button>
+                <button className='add-to-cart' onClick={()=>{props.onAddToCart(props.laptop)}}>Add To Cart</button>
             </div>
         </div>
     )

@@ -28,7 +28,7 @@ class App extends React.Component {
       {description:'APPLE 2022 MacBook Pro M2 - (8 GB/512 GB SSD/Mac OS Monterey) MNEJ3HN/A',price:'1,42,990/-',img:'https://rukminim1.flixcart.com/image/312/312/l4hcx3k0/computer/r/6/b/macbook-pro-thin-and-light-laptop-apple-original-imagfdeu9rmugapt.jpeg?q=70'},
       {description:'APPLE MacBook Air M1 - (16 GB/512 GB SSD/Mac OS Big Sur) Z124J006KD',price:'1,20,000/-',img:'https://rukminim1.flixcart.com/image/312/312/kyt0ya80/computer/i/d/p/na-thin-and-light-laptop-apple-original-imagaygvtvf6cx8h.jpeg?q=70'},
       {description:'APPLE 2021 Macbook Pro M1 Max - (32 GB/1 TB SSD/Mac OS Monterey) MK1H3HN/A',price:'1,30,000/-',img:'https://rukminim1.flixcart.com/image/312/312/kuyf8nk0/computer/g/z/q/mk1e3hn-a-laptop-apple-original-imag7yzmv57cvg3f.jpeg?q=70'}],
-      carts:[{description:'APPLE iphone 13 Pro Max(512GB, Silver)',price:'1,50,000/-',img:'https://rukminim1.flixcart.com/image/312/312/ktketu80/mobile/c/g/4/iphone-13-pro-max-mlll3hn-a-apple-original-imag6vpg3r7dyvhm.jpeg?q=70'}]
+      carts:[]
     }
   }
   handleClickMovies = () => {
@@ -60,7 +60,7 @@ class App extends React.Component {
             })}</div>
             <div className='laptops-list'>
             {this.state.laptops.map((laptop,index)=>{
-              return( <Laptops key={index} laptop={laptop} />  )
+              return( <Laptops key={index} laptop={laptop} onAddToCart={this.handleAddToCart} />  )
             })}</div></div>
             : <div className='list'><div className='cart-list'>
               {this.state.carts.map((cart,index)=>{
