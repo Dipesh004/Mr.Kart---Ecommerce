@@ -54,7 +54,8 @@ class App extends React.Component {
       console.log('qty=0')
     } else {
       console.log('qty+1')
-      this.state.carts[index].qty += 1
+      // eslint-disable-next-line
+      this.state.carts[index].qty += 1 // eslint-disable-next-line
       console.log(this.state.carts[index].qty)
       this.setState({ ...this.state, carts: this.state.carts,nodisplaytext:false })
 
