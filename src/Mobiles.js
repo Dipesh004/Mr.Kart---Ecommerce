@@ -11,7 +11,7 @@ function Mobiles(props) {
                     {props.mobile.description}
                 </div>
                 <div className="mobile-price">
-                    {props.mobile.price}
+                     Rs. {props.mobile.price}/-
                 </div>
                 <button className='add-to-cart' onClick={()=>{props.onAddToCart(props.mobile)}} >Add To Cart</button>
             </div>

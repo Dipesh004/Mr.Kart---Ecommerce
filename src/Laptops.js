@@ -11,7 +11,7 @@ function Laptops(props){
                     {props.laptop.description}
                 </div>
                 <div className="laptop-price">
-                    {props.laptop.price}
+                    Rs. {props.laptop.price}/-
                 </div>
                 <button className='add-to-cart' onClick={()=>{props.onAddToCart(props.laptop)}}>Add To Cart</button>
             </div>
