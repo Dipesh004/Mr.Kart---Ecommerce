@@ -13,6 +13,9 @@ function Cart(props) {
                 <div className="cart-price">
                     {props.cart.price}
                 </div>
+                <div className="cart-qty">
+                    Quantity - {props.cart.qty}
+                </div>
             </div>
         </div>
     )
